@@ -1,0 +1,144 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <style>
+          input[type="file"]{
+            height: 90%;
+            width: 90%;
+            position:absolute;
+            top: 0;
+            left:0;
+            z-index: 3;
+            opacity: 0;
+            cursor: pointer;
+            } 
+      </style>
+</head>
+<body>
+    <div class="navbar-extended">
+        <nav class="teal darken-3">
+                <a href="signIn.html"><i class=" small material-icons white-text">arrow_back</i></a>
+           
+            <form action="">
+                <div class="center-align" style=" position: relative;">
+                    <img src="images\screen 1.png" style="width:100;height:100; bottom:10000">
+                    <input type="file" required>
+                 </div>
+        </nav>
+    </div>
+    <br><br><br>
+    <div class="row">
+        <div class="input-field col s12">
+        <i class=" prefix material-icons teal-text">person</i>
+            <label for="username">User name</label>
+            <input type="text" name="username" id="username" required>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s12">
+            <i class=" prefix material-icons teal-text">email</i>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s12">
+            <i class=" prefix material-icons teal-text">lock</i>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required> 
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s12">
+            <i class=" prefix material-icons teal-text">lock</i>
+            <label for="confirmPassword"> Confirm Password</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" required>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s12">
+            <i class=" prefix material-icons teal-text">public</i>
+            <label for="nationalId"> National ID / Iqama</label>
+            <input type="text" name="nationalId" id="nationalId" required>
+        </div>
+    </div>
+
+            
+    <div class="input-field row">
+        <div clas="col s1">
+            <i class="prefix material-icons teal-text">accessibility</i>
+        </div>
+        <div class="col s11">
+            <select style="display:block; margin-left: 20px;">
+                <option value="" disabled selected>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+
+    </div>           
+
+                  
+                 
+                    
+    <div class="input-field row">
+        <div clas="col s1">
+            <i class="prefix material-icons teal-text">accessible</i>
+        </div> 
+        <div class="col s11">
+            <select style="display:block; margin-left: 20px;" class="disabilities">
+                <option value="" disabled selected>
+                    <label>Do you have any disabilities?</label>
+                </option>
+                <option value="no">No</option>
+                <option value="visionImpairment">Vision Impairment</option>
+                <option value="deaf">Deaf or hard of hearing</option>
+                <option value="mentalHealth ">mental health conditions</option>
+                <option value="autism">Autism Spectrum Disorder</option>
+                <option value="physicalDisability">Physical Disability</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+    </div>             
+
+                
+              
+    <div class="row" style="display:none;" id="disability-input"> 
+        <div class="input-field col s12">
+            <label for="others">Others</label>
+            <input type="text" name="others" id="others">
+        </div>
+    </div>
+    <div class="center-align">
+        <button class=" large waves-effect waves-light btn teal darken-3 white-text  ">SIGN UP</button>
+    </div>
+    <br>
+    <br>       
+
+</form>    
+</body>
+</html>
+<script>
+   $(document).ready(function(){
+    $("select.disabilities").change(function(){
+        var selectedOp = $(this).children("option:selected").val();
+        if(selectedOp == "others")
+            $("#disability-input").show();
+    });
+});
+</script>
+
