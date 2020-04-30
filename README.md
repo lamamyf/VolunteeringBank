@@ -18,4 +18,4 @@ Invite your friends and join the national volunteers community
 
  Networking, connection, more chances and experiences.
 
-You can visit our website by visting the following URL, https://lamamyf.github.io/VolunteeringBank/signIn.html
+You can reach our website by visting the following URL, https://lamamyf.github.io/VolunteeringBank/signIn.html
