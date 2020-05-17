@@ -14,16 +14,17 @@
 </head>
 <body>
 <header>
-    <div class="navbar-fixed">
-      <nav class="teal darken-3 white-text"></nav>
+    <div class="nav-wrapper" >
+      <nav class="teal darken-3 white-text" style="position: absolute; top: -2.5rem;"></nav>
     </div>
+    <br>
 </header>
 
 <main>
      <!--Content-->
      <div class="container">
         <div class=" valign-wrapper row "> 
-            <img src="images\2.png" class="col s2 m1">
+            <img src="images\2.png" class="responsive-img col s2 ">
          
            <div class="col s10 ">
              <h5>Select Your Preferences</h5>
@@ -35,44 +36,44 @@
             <div class="row"> 
         
                       <div class="row center-align valign-wrapper">
-                      <div class="col s2">
+                      <div class="col s3">
                       <input type="checkbox" id="myCheckbox1" />
-                      <label for="myCheckbox1"><img src="images\elderly.png" class="pref-img"/></label>
+                      <label for="myCheckbox1"><img src="images\elderly.png" class="responsive-img"/></label>
                       </div>
-                      <h6 class="col s10">Working with elderly</h6>
+                      <h6 class="col s9">Working with elderly</h6>
                     </div>
                 
                     <div class="row center-align valign-wrapper">
-                      <div class="col s2">
+                      <div class="col s3">
                       <input type="checkbox" id="myCheckbox2" />
-                      <label for="myCheckbox2"><img src="images\kids.png" class="pref-img"/></label>
+                      <label for="myCheckbox2"><img src="images\kids.png" class="responsive-img"/></label>
                       </div>
-                      <h6 class="col s10">Working with kids</h6>
+                      <h6 class="col s9">Working with kids</h6>
                     </div>
                  
                     <div class="row center-align valign-wrapper">
-                      <div class="col s2">
+                      <div class="col s3">
                       <input type="checkbox" id="myCheckbox3" />
-                      <label for="myCheckbox3"><img src="images\specialneeds.png" class="pref-img"/></label>
+                      <label for="myCheckbox3"><img src="images\specialneeds.png" class="responsive-img"/></label>
                       </div>
-                      <h6 class="col s10">Working with special needs</h6>
+                      <h6 class="col s9">Working with special needs</h6>
                     </div>
 
                     
                     <div class="row center-align valign-wrapper">
-                      <div class="col s2">
+                      <div class="col s3">
                       <input type="checkbox" id="myCheckbox4" />
-                      <label for="myCheckbox4"><img src="images\online.png" class="pref-img"/></label>
+                      <label for="myCheckbox4"><img src="images\online.png" class="responsive-img"/></label>
                       </div>
-                      <h6 class="col s10">Working online</h6>
+                      <h6 class="col s9">Working online</h6>
                     </div>
            
                     <div class="row center-align valign-wrapper">
-                      <div class="col s2">
+                      <div class="col s3">
                       <input type="checkbox" id="myCheckbox5" />
-                      <label for="myCheckbox5"><img src="images\nearby.png" class="pref-img"/></label>
+                      <label for="myCheckbox5"><img src="images\nearby.png" class="responsive-img"/></label>
                       </div>
-                      <h6 class="col s10">Working near by your location</h6>
+                      <h6 class="col s9">Working near by your location</h6>
                     </div>
               
             </div>
@@ -83,20 +84,23 @@
         </form>
     </div>
 </main>
-       
-<footer class="teal darken-3 white-text page-footer">
-              <ul id="nav-mobile">
-                  <div class="row">
-                      <div class="container">
-                      <div class="container center-align">
-                      <li class="col s3"><a href="#"><i class="small material-icons black-text">account_balance_wallet</i></a></li>
-                      <li class="col s3"><a href="#"><i class="small material-icons black-text">person_add</i></a></li>
-                      <li class="col s3"><a href="#"><i class="small material-icons black-text">store</i></a></li>
-                      <li class="col s3"><a href="#"><i class="small material-icons black-text">home</i></a></li>
-                  </div>
+
+
+<div class="navbar-fixed" style="position: absolute; bottom: -1rem;">        <!-- bottom navbar -->
+  <nav class="teal darken-3 white-text">
+      <ul id="nav-mobile">
+          <div class="row">
+              <div class="container center-align">
+                  <li class="col s3"><a href="#"><i class="small material-icons black-text">account_balance_wallet</i></a></li>
+                  <li class="col s3"><a href="#"><i class="small material-icons black-text">person_add</i></a></li>
+                  <li class="col s3"><a href="#"><i class="small material-icons black-text">store</i></a></li>
+                  <li class="col s3 active"><a href="home.html"><i class="small material-icons black-text">home</i></a></li>
               </div>
-              </ul>  
-</footer>  
+          </div>
+      </ul>
+  </nav>
+</div>
+
 </body>
 </html>
 

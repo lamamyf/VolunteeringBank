@@ -58,22 +58,9 @@ aul {
   }
   
   :checked + label img {
-    transform: scale(0.9);
+    transform: scale(1);
     /* box-shadow: 0 0 5px #333; */
     z-index: -1;
   }
-  .pref-img{
-    width:50px; 
-    height: 50px;
-  }
+ 
   
-  
-  body {
-      display: flex;
-      min-height: 100vh;
-      flex-direction: column;
-    }
-  
-    main {
-      flex: 1 0 auto;
-    }
