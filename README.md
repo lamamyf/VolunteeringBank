@@ -8,7 +8,7 @@ Customized tools will help you in choosing the perfect volunteering opportunity.
 
 Our partners will provide a real volunteering slots in different fields.
 
-You will absolutory find something suits your skills, experiences, time and desire. 
+You will definitely find something suits your skills, experiences, time and desire. 
 
 You will earn points for each volunteering hour.
 
